@@ -11,13 +11,14 @@
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/.config/i3
   - mkdir -p ~/.config/termite
-  - mkdir -p ~/.config/nvim
+  - mkdir -p ~/.config/mopidy
   - mkdir -p ~/.dotfiles/repos
   - mkdir -p vim/plugged
   - ./scripts/packages.sh
   - ./scripts/termite-install.sh
   - ./scripts/i3-gaps-install.sh
   - ./scripts/powerline-fonts-install.sh
+  - ./scripts/mopidy/mopidy-spotify-install.sh
   - git config --global core.editor "vim"
 
 - link:
@@ -29,4 +30,5 @@
     ~/.tmux.conf.local: tmux.conf.local
     ~/.config/i3/config: i3config
     ~/.config/termite/config: termite.conf
+    ~/.config/mopidy/mopidy.conf: mopidy.conf
 
