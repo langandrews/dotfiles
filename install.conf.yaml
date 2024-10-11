@@ -5,15 +5,13 @@
     shell:
       stdout: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - git config --global core.editor "nvim"
+    - [git submodule update --init --recursive, Installing submodules]
 
 - link:
     ~/.zgen: zgen
     ~/.zshrc: zshrc
     ~/.config/doom: doom
     ~/.config/nvim: nvim
-
