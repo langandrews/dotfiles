@@ -9,25 +9,11 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - mkdir -p ~/.dotfiles/repos
-  - mkdir -p ~/.cache/dein/repos/github.com/Shougo
-  - ./scripts/packages.sh
-  - ./scripts/termite-install.sh
-  - ./scripts/i3-gaps-install.sh
-  - ./scripts/fzf-install.sh
-  - ./scripts/powerline-fonts-install.sh
   - git config --global core.editor "nvim"
 
 - link:
     ~/.zgen: zgen
     ~/.zshrc: zshrc
+    ~/.config/doom: doom
     ~/.config/nvim: nvim
-    ~/.cache/dein/repos/github.com/Shougo/dein.vim: dein.vim
-    ~/.tmux: .tmux
-    ~/.tmux.conf: .tmux/.tmux.conf
-    ~/.tmux.conf.local: tmux.conf.local
-    ~/.config/i3: i3
-    ~/.config/i3blocks: i3blocks
-    ~/.config/i3status: i3status
-    ~/.config/termite: termite
 
