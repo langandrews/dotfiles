@@ -39,7 +39,6 @@ return {
         "pyright",
         "elixirls",
         "omnisharp",
-        "hls",
         "clojure_lsp",
         "rust_analyzer",
       },

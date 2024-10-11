@@ -131,12 +131,6 @@ return {
           },
         })
       end,
-      ["hls"] = function()
-        lspconfig["hls"].setup({
-          capabilities = capabilities,
-          filetypes = { "haskell", "lhaskell", "cabal" },
-        })
-      end,
     })
   end,
 }
