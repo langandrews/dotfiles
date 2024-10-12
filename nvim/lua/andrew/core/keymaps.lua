@@ -22,4 +22,4 @@ keymap.set("n", "<leader><Tab>n", "<cmd>tabn<CR>", { desc = "Go to next tab" }) 
 keymap.set("n", "<leader><Tab>p", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader><Tab>f", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
-keymap.set("n", "<leader>qq", "<cmd>qa<CR>", { desc = "Close Neovim" })
+keymap.set("n", "<leader>qq", "<cmd>wqa<CR>", { desc = "Close Neovim" })

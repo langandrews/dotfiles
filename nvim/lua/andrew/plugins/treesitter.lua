@@ -45,6 +45,8 @@ return {
         "c",
         "haskell",
         "elixir",
+        "eex",
+        "heex",
         "clojure",
         "commonlisp",
       },
