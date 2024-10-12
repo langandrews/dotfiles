@@ -4,3 +4,6 @@ tmux/plugins/
 tmux/resurrect
 tags*
 repos/
+
+# Avoid pushing secrets to repo
+zshenv
