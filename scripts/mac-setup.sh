@@ -5,4 +5,5 @@ brew install node
 brew install ripgrep
 brew install tree
 brew install neovim
+brew install tmux
 brew install ghc

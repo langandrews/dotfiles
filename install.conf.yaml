@@ -9,9 +9,13 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - mkdir -p ~/.tmux/plugins
 
 - link:
     ~/.zgen: zgen
     ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
     ~/.config/doom: doom
     ~/.config/nvim: nvim
+    ~/.tmux/plugins/tpm: tpm
+    ~/.config/tmux: tmux
