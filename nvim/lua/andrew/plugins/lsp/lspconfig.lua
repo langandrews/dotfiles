@@ -132,6 +132,12 @@ return {
           },
         })
       end,
+      ["elixirls"] = function()
+        lspconfig["elixirls"].setup({
+          cmd = { "elixir-ls" },
+          capabilities = capabilities,
+        })
+      end,
     })
   end,
 }

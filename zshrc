@@ -14,6 +14,7 @@ if ! zgen saved; then
 	zgen oh-my-zsh plugins/git
 	zgen oh-my-zsh plugins/history
 	zgen oh-my-zsh plugins/web-search
+	zgen oh-my-zsh plugins/dotenv
 	zgen oh-my-zsh themes/ys
 
 	# NOTE: zsh-syntax-highlighting *must* come before zsh-history-substring
@@ -49,8 +50,18 @@ alias dd='dd status=progress'
 alias c='clear'
 alias grep='grep --color=auto'
 alias vim='nvim'
+alias tmux='tmux'
 
 export TERM='xterm-256color'
 export EDITOR='nvim'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/opt/homebrew/opt/ruby/bin:/Users/andrew/.local/bin/:$HOME/.config/emacs/bin/:/opt/homebrew/opt/grep/libexec/gnubin:$HOME/.roswell/bin:$PATH"
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/andrew/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/andrew/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/andrew/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andrew/google-cloud-sdk/completion.zsh.inc'; fi
