@@ -7,3 +7,4 @@ brew install tree
 brew install neovim
 brew install tmux
 brew install ghc
+brew install lazygit
