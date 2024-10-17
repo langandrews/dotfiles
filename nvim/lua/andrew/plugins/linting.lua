@@ -13,6 +13,9 @@ return {
       python = { "pylint" },
     }
 
+    require("lint").linters.pylint.cmd = "python3"
+    require("lint").linters.pylint.args = { "-m", "pylint", "-f", "json" }
+
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
     vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
