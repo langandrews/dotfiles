@@ -54,6 +54,7 @@ return {
         "eslint_d",
         "clj-kondo",
         "trivy",
+        "rustfmt",
       },
     })
   end,
