@@ -15,29 +15,19 @@ if ! zgen saved; then
 	zgen oh-my-zsh plugins/history
 	zgen oh-my-zsh plugins/web-search
 	zgen oh-my-zsh plugins/dotenv
-	zgen oh-my-zsh themes/ys
 
 	# NOTE: zsh-syntax-highlighting *must* come before zsh-history-substring
 	# search, else breakage occurs (or so I'm told).
-	zgen load jdavis/zsh-files
 	zgen load zsh-users/zsh-completions src
 	zgen load zsh-users/zsh-syntax-highlighting
 	zgen load zsh-users/zsh-history-substring-search
 
-	# Use bullet train theme
-	#zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
-	zgen load win0err/aphrodite-terminal-theme aphrodite
+  # Theme
+	zgen load langandrews/aphrodite-terminal-theme aphrodite
 
 	# Generate the init.zsh script
 	zgen save
 fi
-
-# Remove `nvm` from BULLETTRAIN_PROMPT_ORDER, since it only works if node/nvm
-# are installed, and I don't have much need for this, see:
-#
-#   - https://github.com/caiogondim/bullet-train.zsh/issues/192
-#
-#BULLETTRAIN_PROMPT_ORDER=($(echo ${BULLETTRAIN_PROMPT_ORDER[@]/#%nvm}))
 
 #----------------------------------------
 # Aliases
@@ -49,10 +39,12 @@ alias dirs='dirs -v'
 alias dd='dd status=progress'
 alias c='clear'
 alias grep='grep --color=auto'
-alias vim='nvim'
 alias tmux='tmux'
 alias cdcode='cd /Volumes/Code/'
 alias eslintinit='npm init @eslint/config@latest'
+
+alias gp='git pull'
+alias gP='git push'
 
 export TERM='xterm-256color'
 export EDITOR='nvim'
